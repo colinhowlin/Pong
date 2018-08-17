@@ -9,11 +9,11 @@ public class Ball{
     
     //***Constructor Class***//
     public Ball(int size, int xCoord, int yCoord, int yVelocity, int xVelocity){
-        this.size = size;
-        this.xCoord = xCoord;
-        this.yCoord = yCoord;
-        this.xVelocity = xVelocity;
-        this.yVelocity = yVelocity;
+        setSize(size);
+        setXCoord(xCoord);
+        setYCoord(yCoord);
+        setYVelocity(yVelocity);
+        setXVelocity(xVelocity);
     }
     
     public Ball(){

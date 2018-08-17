@@ -7,9 +7,9 @@ public class Player{
     
     //***Constructor Class***//
     public Player(int score, String name, int credits){
-        this.score = score;
-        this.name = name;
-        this.credits = credits;
+        setScore(score);
+        setName(name);
+        setCredits(credits);
     }
     
     public Player(){

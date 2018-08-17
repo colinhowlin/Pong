@@ -11,9 +11,9 @@ public class Paddle{
     
     //***Constructor Class***//
     public Paddle(int xCoord, int yCoord, int yVelocity){
-        this.xCoord = xCoord;
-        this.yCoord = yCoord;
-        this.yVelocity = yVelocity;
+        setXCoord(xCoord);
+        setYCoord(yCoord);
+        setYVelocity(yVelocity);
 
     }
     
