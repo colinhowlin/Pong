@@ -68,7 +68,12 @@ public class Ball{
     public int getXVelocity(){
         return xVelocity;
     }
-    
+
+    @Override
+    public int hashCode() {
+        return super.hashCode();
+    }
+
     //get yVelocity
     public int getYVelocity(){
         return yVelocity;

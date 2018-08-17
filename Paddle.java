@@ -5,9 +5,9 @@ public class Paddle{
     private int yCoord;
     private int xCoord;
     private int yVelocity;
-    private int xVelocity = 0;
-    private int width = 10;
-    private int height = 40;
+    private static final int xVelocity = 0;
+    private static final int width = 10;
+    private static final int height = 40;
     
     //***Constructor Class***//
     public Paddle(int xCoord, int yCoord, int yVelocity){
