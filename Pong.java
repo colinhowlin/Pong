@@ -16,9 +16,12 @@ public class Pong extends JPanel{
         
         int width = getWidth();
         int height = getHeight();
-        Ball ball = new Ball(ballSize, (width / 2) - (ballSize / 2), (height / 2) - (ballSize / 2), 0, 0);
-        Paddle paddle1 = new Paddle(10, height / 2, 0);
-        Paddle paddle2 = new Paddle(width - 20, height / 2, 0);
+        Ball ball = new Ball((width / 2) - (ballSize / 2),
+                (height / 2) - (ballSize / 2), 0, 0, ballSize, ballSize);
+        Paddle paddle1 = new Paddle(10, height / 2,
+                0, 0, 10, 40);
+        Paddle paddle2 = new Paddle(width - 20, height / 2,
+                0, 0, 10, 40);
         
         //Draw the pitch
         setBackground(Color.black);
@@ -34,11 +37,13 @@ public class Pong extends JPanel{
         }
         
         //draw the ball
-        g.fillOval(ball.getXCoord(), ball.getYCoord(), ball.getSize(), ball.getSize());
+        g.fillOval(ball.getXCoordinate(), ball.getYCoordinate(), ball.getWidth(), ball.getHeight());
         
         //draw the paddles
-        g.fillRect(paddle1.getXCoord(), paddle1.getYCoord() - (paddle1.getHeight() / 2), paddle1.getWidth(), paddle1.getHeight());
-        g.fillRect(paddle2.getXCoord(), paddle2.getYCoord() - (paddle2.getHeight() / 2), paddle2.getWidth(), paddle2.getHeight());
+        g.fillRect(paddle1.getXCoordinate(), paddle1.getYCoordinate() - (paddle1.getHeight() / 2),
+                paddle1.getWidth(), paddle1.getHeight());
+        g.fillRect(paddle2.getXCoordinate(), paddle2.getYCoordinate() - (paddle2.getHeight() / 2),
+                paddle2.getWidth(), paddle2.getHeight());
         
     }
 }

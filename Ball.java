@@ -1,83 +1,9 @@
-public class Ball{
-    
-    //instance variables
-    private int size;
-    private int xCoord;
-    private int yCoord;
-    private int xVelocity;
-    private int yVelocity;
-    
-    //***Constructor Class***//
-    public Ball(int size, int xCoord, int yCoord, int yVelocity, int xVelocity){
-        setSize(size);
-        setXCoord(xCoord);
-        setYCoord(yCoord);
-        setYVelocity(yVelocity);
-        setXVelocity(xVelocity);
-    }
-    
-    public Ball(){
-        this(0, 0, 0, 0, 0);
-    }
-        
-    //getter and setter methods
-    //set size of ball
-    public void setSize(int size){
-        if (size < 0){
-            throw new IllegalArgumentException("Size must be a positive integer");
-        }
-        this.size = size;
-    }
+public class Ball extends ScreenObject{
 
-    //set x-coordinate
-    public void setXCoord(int xCoord){
-        this.xCoord = xCoord;
-    }
-    
-    //set y-coordinate
-    public void setYCoord(int yCoord){
-        this.yCoord = yCoord;
-    }
-    
-    //set x Velocity
-    public void setXVelocity(int xVelocity){
-        this.xVelocity = xVelocity;
-    }
-    
-    //set y Velocity
-    public void setYVelocity(int yVelocity){
-        this.yVelocity = yVelocity;
-    }
-    
-    //get size of ball
-    public int getSize(){
-        return size;
-    }
-    
-    //get x-Coordinate
-    public int getXCoord(){
-        return xCoord;
-    }
-    
-    //get y-Coordinate
-    public int getYCoord(){
-        return yCoord;
-    }
-    
-    //get xVelocity
-    public int getXVelocity(){
-        return xVelocity;
-    }
+    public Ball(int xCoordinate, int yCoordinate, int xVelocity,
+                int yVelocity, int width, int height){
 
-    @Override
-    public int hashCode() {
-        return super.hashCode();
+        super(xCoordinate, yCoordinate, xVelocity,
+                yVelocity, width, height);
     }
-
-    //get yVelocity
-    public int getYVelocity(){
-        return yVelocity;
-    }
-    
-    //
 }
