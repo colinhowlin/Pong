@@ -7,6 +7,7 @@ public class PongTest{
         
         //create a panel that contains our drawing
         Pong panel = new Pong();
+        panel.setFocusable(true);
         
         //create a new frame to hold the panel
         JFrame application = new JFrame("Pong");

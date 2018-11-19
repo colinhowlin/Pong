@@ -1,5 +1,8 @@
+//Superclass for objects appearing on screen
+
 public class ScreenObject {
 
+    //instance variables
     private int xCoordinate;
     private int yCoordinate;
     private int xVelocity;
@@ -7,8 +10,10 @@ public class ScreenObject {
     private int width;
     private int height;
 
+    //constructor
     public ScreenObject(int xCoordinate, int yCoordinate, int xVelocity,
                         int yVelocity, int width, int height){
+
 
         if (xCoordinate < 0 || yCoordinate < 0) {
             throw new IllegalArgumentException(
