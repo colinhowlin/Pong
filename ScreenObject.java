@@ -11,10 +11,7 @@ public class ScreenObject {
     private int height;
 
     //constructor
-    public ScreenObject(int xCoordinate, int yCoordinate, int xVelocity,
-                        int yVelocity, int width, int height){
-
-
+    public ScreenObject(int xCoordinate, int yCoordinate, int xVelocity, int yVelocity, int width, int height){
         if (xCoordinate < 0 || yCoordinate < 0) {
             throw new IllegalArgumentException(
                     "Coordinate must be positive integer");

@@ -14,7 +14,7 @@ public class PongTest{
         
         //set the frame to exit when it is closed
         application.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        
+        application.setResizable(false);
         application.add(panel); //add panel to the frame
         application.setSize(640, 480);  //set the size of the frame
         application.setVisible(true);   //make the frame visible
